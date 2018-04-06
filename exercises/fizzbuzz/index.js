@@ -12,21 +12,35 @@
 //   4
 //   buzz
 
+// function fizzBuzz(n) {
+//     let start = 1;
+//     while(start <= n) {
+//         if(start % 3 === 0) {
+//             if(start % 5 === 0) {
+//                 console.log('fizzbuzz', start);
+//             }else {
+//                 console.log('fizz', start);
+//             } 
+//         } else if (start % 5 === 0) {
+//             console.log('buzz', start);
+//         } else {
+//             console.log(start);
+//         }
+//         start++;
+//     }
+// }
+
 function fizzBuzz(n) {
-    let start = 1;
-    while(start <= n) {
-        if(start % 3 === 0) {
-            if(start % 5 === 0) {
-                console.log('fizzbuzz', start);
-            }else {
-                console.log('fizz', start);
-            } 
-        } else if (start % 5 === 0) {
-            console.log('buzz', start);
+    for (let i = 1; i <= n; i++) {
+        if(i % 15 === 0) {
+            console.log('fizzbuzz');
+        } else if (i % 3 === 0) {
+            console.log('fizz');
+        } else if (i % 5 === 0) {
+            console.log('buzz');
         } else {
-            console.log(start);
+            console.log(i);
         }
-        start++;
     }
 }
 
